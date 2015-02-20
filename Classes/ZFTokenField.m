@@ -44,6 +44,14 @@
     return;
 }
 
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    return CGRectInset(bounds , 10 , 10);
+}
+
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    return CGRectInset(bounds , 10 , 10);
+}
+
 @end
 
 @interface ZFTokenField () <UITextFieldDelegate>
